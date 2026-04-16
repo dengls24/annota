@@ -1,0 +1,12 @@
+[project]
+name = "zotero-mcp"
+version = "0.1.0"
+description = "Zotero MCP Server — PDF 语义批注与笔记工作流"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "pymupdf>=1.24.0",
+]
+
+[project.scripts]
+zotero-mcp = "zotero_mcp.server:mcp.run"

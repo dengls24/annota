@@ -21,10 +21,10 @@ AI reads your papers, highlights key findings, explains formulas, and writes str
 
 | You say... | AI does... |
 |------------|------------|
-| "高亮摘要中的发现结果" | Reads the abstract, identifies findings, highlights them in green |
-| "解释第3页的公式" | Extracts the formula, adds a Chinese explanation as a note annotation |
-| "写一份结构化阅读笔记" | Generates a note with contributions, methods, results, limitations — saved to Zotero |
-| "以 MICRO 审稿人视角审阅" | Produces a structured review with scores and actionable feedback |
+| "高亮摘要中的发现结果" (Highlight findings in the abstract) | Reads the abstract, identifies findings, highlights them in green |
+| "解释第3页的公式" (Explain the formulas on page 3) | Extracts the formula, adds an explanation as a note annotation |
+| "写一份结构化阅读笔记" (Write a structured reading note) | Generates a note with contributions, methods, results, limitations — saved to Zotero |
+| "以 MICRO 审稿人视角审阅" (Review as a MICRO reviewer) | Produces a structured review with scores and actionable feedback |
 
 <div align="center">
 
@@ -113,7 +113,8 @@ Add to `~/.claude.json` (or via Claude Code Settings > MCP Servers):
 Just talk to Claude naturally:
 
 ```
-用Zotero把这篇论文摘要中的发现结果用绿色标出来
+# Chinese: 用Zotero把这篇论文摘要中的发现结果用绿色标出来
+# English: Highlight the findings in this paper's abstract in green using Zotero
 "E:\papers\my-paper.pdf"
 ```
 
@@ -140,6 +141,7 @@ cp -r .claude/skills/ ~/.claude/skills/
 **Input:**
 ```
 用Zotero把这篇论文摘要中的发现结果用绿色标出来
+(Highlight the findings in this paper's abstract in green using Zotero)
 "E:\Zotero\storage\ABCD1234\Song et al. - 2025 - AI washing.pdf"
 ```
 
@@ -156,6 +158,7 @@ cp -r .claude/skills/ ~/.claude/skills/
 **Input:**
 ```
 标注论文中的假设(H1, H2)，并用中文解释每个假设的理论基础
+(Annotate the hypotheses (H1, H2) and explain the theoretical basis of each in Chinese)
 ```
 
 **Result:**
@@ -171,6 +174,7 @@ cp -r .claude/skills/ ~/.claude/skills/
 **Input:**
 ```
 解释论文中的核心公式，添加中文注释
+(Explain the key formulas in this paper, add Chinese annotations)
 ```
 
 **Result:**
@@ -186,6 +190,7 @@ cp -r .claude/skills/ ~/.claude/skills/
 **Input:**
 ```
 标注结论部分的政策启示，添加中文总结笔记
+(Highlight policy implications in the conclusion, add a Chinese summary note)
 ```
 
 **Result:**
@@ -216,6 +221,7 @@ cp -r .claude/skills/ ~/.claude/skills/
 **Input:**
 ```
 逐段阅读这篇论文，为每个重要段落添加中文批注
+(Read this paper paragraph by paragraph, add Chinese annotations to each important section)
 ```
 
 **Result:**
